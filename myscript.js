@@ -3,6 +3,7 @@
  let newBtn=document.querySelector(".winBtn");
  let winMsg= document.querySelector(".win-msg");
  let winnermsg  = document.querySelector(".winPara")
+ let h=document.querySelector("h1");
 let dopO = true;
 const winPatterns = [
     [0, 1, 2],
@@ -22,7 +23,7 @@ const winPatterns = [
     box.addEventListener("click",()=>{
         // console.log("Yes");
         c++;  
-        console.log(c);
+        //console.log(c);
      if(dopO===true){
         box.innerText="O";
         box.style.color="red";
@@ -42,9 +43,11 @@ const winPatterns = [
   
 
 const  rsetBtn = ()=>{
-     let dopO = true;
+     dopO = true;
      enable();
      winMsg.classList.add("hide");
+     rstBtn.classList.remove("hide");
+    //  h.classList.remove("hide");
      c=0;
 }
 
@@ -76,10 +79,14 @@ const disable = ()=>{
     }else{
         winMsg.style.color="blue"    
     }
+    winMsg.classList.remove("hide");
+    rstBtn.classList.add("hide");
+    // h.classList.add("hide");
+
+    disable();
 
     
-    winMsg.classList.remove("hide");
-    disable();
+    
   }
   
 
@@ -91,10 +98,10 @@ const disable = ()=>{
        let p1 = boxes[pat[0]].innerText;
        let p2 = boxes[pat[1]].innerText;
        let p3 = boxes[pat[2]].innerText;
-       console.log(c);
+       //console.log(c);
        if(p1 != "" &&  p2 != "" && p3 != ""){
         if(p1===p2 && p2 === p3){
-          console.log("winner");
+         // console.log("winner");
           showWinner(p1);
           isWinner= true;
           break;
@@ -103,9 +110,9 @@ const disable = ()=>{
       }
     }
     if(c===9 && !isWinner){
-      console.log(isWinner);
+      //console.log(isWinner);
       winMsg.classList.remove("hide");
-      winnermsg.innerText="Game Draw";
+      winnermsg.innerText="Game  Was Draw!! Play Again";
       winMsg.style.color="Green";
      }
   };

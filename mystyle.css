@@ -7,8 +7,7 @@
     text-align: center;
 }
 .container{
-    justify-content: center;
-    align-items: center;
+    
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -25,6 +24,7 @@
     justify-content: center;
     align-items: center;
     gap:1.5vmin;
+
     
     
     
@@ -43,16 +43,28 @@
 
 
 .rstBtn{
-    width:160px;
-    padding:15px;
+    /* width:120px;
+    padding:10px;
     background-color:black;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 15px;
     color:white;
     font-family:roboto;
-    font-size:30px;
-    margin-bottom: 10rem;
-    margin-top: 5rem;
+    font-size:20px;
+    margin-bottom: 3rem; */
+    width:120px;
+    height: 50px;
+    padding:5px;
+    background-color:#36454F;
+    text-align: center;
+    border-radius: 20px;
+    color:white;
+    font-family:roboto;
+    font-size:25px;
+    
+    
+
+    
 
 }
 .hide{
@@ -60,31 +72,29 @@
 }
 
 .winBtn{
-    width:170px;
+    width:150px;
     height: 50px;
-    padding:5pxpx;
-    background-color:black;
+    padding:5px;
+    background-color:#36454F;
     text-align: center;
     border-radius: 20px;
     color:white;
     font-family:roboto;
-    font-size:20px;
+    font-size:25px;
     margin: 20px;
+    
 }
-.win-msg{
-    height:100vh;
+/* .win-msg{
+    height:h;
 
     
    
-}
+} */
 .winPara{
     margin-top:5vmin;
     font-family:serif;
     font-size: 30px;
 }
 
-h1{
-    position: sticky;
-    top: 10px;
-}
+
 
