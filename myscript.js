@@ -101,8 +101,6 @@ const disable = ()=>{
         }
         
       }
-      
-      
     }
     if(c===9 && !isWinner){
       console.log(isWinner);

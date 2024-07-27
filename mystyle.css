@@ -5,23 +5,19 @@
 .backgroundContainer{
     background-color: bisque;
     text-align: center;
-    
-
 }
 .container{
+    justify-content: center;
+    align-items: center;
     height: 70vh;
     display: flex;
     justify-content: center;
     
 
-    
-
-    
 }
 
 .game{
-    margin-top:5rem;
-    margin-bottom: 7rem;
+    margin-top: 3rem;
     height: 60vmin;
     width: 60vmin;
     display: flex;
@@ -76,14 +72,19 @@
     margin: 20px;
 }
 .win-msg{
-    height:200vh;
+    height:100vh;
 
     
    
 }
 .winPara{
-    margin-top: 50vmin;
+    margin-top:5vmin;
     font-family:serif;
     font-size: 30px;
+}
+
+h1{
+    position: sticky;
+    top: 10px;
 }
 
