@@ -12,7 +12,7 @@
     height: 70vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    
 
     
 
@@ -20,6 +20,8 @@
 }
 
 .game{
+    margin-top:5rem;
+    margin-bottom: 7rem;
     height: 60vmin;
     width: 60vmin;
     display: flex;
@@ -54,6 +56,7 @@
     font-family:roboto;
     font-size:30px;
     margin-bottom: 10rem;
+    margin-top: 5rem;
 
 }
 .hide{
@@ -74,11 +77,24 @@
 }
 .win-msg{
     height:200vh;
+
     
    
 }
 .winPara{
-    margin-top: 10px;
+    margin-top: 50vmin;
     font-family:serif;
     font-size: 30px;
+}
+
+h1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+
 }
