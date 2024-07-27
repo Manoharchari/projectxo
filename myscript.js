@@ -20,8 +20,8 @@ const winPatterns = [
 
   boxes.forEach((box)=>{
     box.addEventListener("click",()=>{
-        console.log("Yes");
-        c++; 
+        // console.log("Yes");
+        c++;  
         console.log(c);
      if(dopO===true){
         box.innerText="O";
@@ -34,7 +34,7 @@ const winPatterns = [
         dopO = true; 
 
      }
-     checkPattern();
+     checkPattern(c);
      box.disabled=true;
      
     })
@@ -85,29 +85,36 @@ const disable = ()=>{
 
 
   
-  const checkPattern = ()=> {
+  const checkPattern = (c)=> {
+    let isWinner = false;
     for (let pat of winPatterns){
        let p1 = boxes[pat[0]].innerText;
        let p2 = boxes[pat[1]].innerText;
        let p3 = boxes[pat[2]].innerText;
-
+       console.log(c);
        if(p1 != "" &&  p2 != "" && p3 != ""){
         if(p1===p2 && p2 === p3){
           console.log("winner");
           showWinner(p1);
+          isWinner= true;
+          break;
         }
-        // else if(c===9){
-        //   winnermsg.innerText="Game Draw";
-        //   winMsg.style.color="Green"  
-        // }
+        
       }
       
+      
     }
+    if(c===9 && !isWinner){
+      console.log(isWinner);
+      winMsg.classList.remove("hide");
+      winnermsg.innerText="Game Draw";
+      winMsg.style.color="Green";
+     }
   };
 
-  rstBtn.addEventListener("click",()=>{
-    console.log("restrat");
-  })
+  // rstBtn.addEventListener("click",()=>{
+  //   console.log("restrat");
+  // })
 
 
 rstBtn.addEventListener("click",rsetBtn);

@@ -38,7 +38,7 @@
     border-radius: 20px;
     background-color: azure;
     box-shadow: 0 0 1rem rgba(59, 54, 54, 0.5);
-    font-size: 55px;
+    font-size: 6vmin;
     
     
 }
@@ -53,6 +53,7 @@
     color:white;
     font-family:roboto;
     font-size:30px;
+    margin-bottom: 10rem;
 
 }
 .hide{
@@ -72,11 +73,12 @@
     margin: 20px;
 }
 .win-msg{
-    height:100vmin;
+    height:200vh;
     
    
 }
 .winPara{
-    font-family:cursive;
-    font-size: 50px;
+    margin-top: 10px;
+    font-family:serif;
+    font-size: 30px;
 }
