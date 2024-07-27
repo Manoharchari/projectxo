@@ -40,7 +40,7 @@
     border-radius: 20px;
     background-color: azure;
     box-shadow: 0 0 1rem rgba(59, 54, 54, 0.5);
-    font-size: 6vmin;
+    font-size: 8vmin;
     
     
 }
@@ -87,14 +87,3 @@
     font-size: 30px;
 }
 
-h1{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-   
-
-}
