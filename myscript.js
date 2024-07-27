@@ -113,7 +113,9 @@ const disable = ()=>{
       //console.log(isWinner);
       winMsg.classList.remove("hide");
       winnermsg.innerText="Game  Was Draw!! Play Again";
+      
       winMsg.style.color="Green";
+      rstBtn.classList.add("hide");
      }
   };
 
